@@ -28,27 +28,28 @@ function Culture() {
   return (
     <div className="mt-24 rounded-4xl bg-neutral-950 py-24 sm:mt-32 lg:mt-40 lg:py-32">
       <SectionIntro
-        eyebrow="Our culture"
-        title="Balance your passion with your passion for life."
+        eyebrow="Kultúránk"
+        title="Találd meg az egyensúlyt a szenvedélyed és az életed között."
         invert
       >
         <p>
-          We are a group of like-minded people who share the same core values.
+          Hiszünk az együttműködés erejében, amely minden projektünk
+          középpontjában áll.
         </p>
       </SectionIntro>
       <Container className="mt-16">
         <GridList>
-          <GridListItem title="Loyalty" invert>
-            Our team has been with us since the beginning because none of them
-            are allowed to have LinkedIn profiles.
+          <GridListItem title="Elkötelezettség" invert>
+            Minden ügyfélprojektet maximális figyelemmel és szakértelemmel
+            kezelünk, hogy a lehető legjobb eredményt érjük el.
           </GridListItem>
-          <GridListItem title="Trust" invert>
-            We don’t care when our team works just as long as they are working
-            every waking second.
+          <GridListItem title="Rugalmasság" invert>
+            Rugalmasan alkalmazkodunk ügyfeleink igényeihez, legyen szó kis vagy
+            közepes méretű vállalkozásokról.
           </GridListItem>
-          <GridListItem title="Compassion" invert>
-            You never know what someone is going through at home and we make
-            sure to never find out.
+          <GridListItem title="Innováció" invert>
+            A legmodernebb technológiákat és megoldásokat alkalmazzuk, hogy
+            ügyfeleink kiemelkedjenek a versenytársak közül.
           </GridListItem>
         </GridList>
       </Container>
@@ -179,9 +180,9 @@ function Team() {
 }
 
 export const metadata: Metadata = {
-  title: 'About Us',
+  title: 'Rólunk',
   description:
-    'We believe that our strength lies in our collaborative approach, which puts our clients at the center of everything we do.',
+    'Hiszünk abban, hogy az erőnk az együttműködésben rejlik, amely ügyfeleinket helyezi a középpontba.',
 }
 
 export default async function About() {
@@ -189,42 +190,45 @@ export default async function About() {
 
   return (
     <>
-      <PageIntro eyebrow="About us" title="Our strength is collaboration">
+      <PageIntro
+        eyebrow="Rólunk"
+        title="Digitális megoldások, amelyek előre visznek"
+      >
         <p>
-          We believe that our strength lies in our collaborative approach, which
-          puts our clients at the center of everything we do.
+          A Wenovate elkötelezett amellett, hogy ügyfeleinek magas színvonalú
+          technológiai szolgáltatásokat nyújtson. A célunk, hogy minden projekt
+          a lehető legjobban tükrözze ügyfeleink vízióját és célkitűzéseit.
         </p>
         <div className="mt-10 max-w-2xl space-y-6 text-base">
           <p>
-            Studio was started by three friends who noticed that developer
-            studios were charging clients double what an in-house team would
-            cost. Since the beginning, we have been committed to doing things
-            differently by charging triple instead.
+            A Wenovate azért jött létre, hogy egyedi és hatékony digitális
+            megoldásokat kínáljon. Hiszünk abban, hogy minden sikeres projekt
+            alapja a közös gondolkodás és az ügyfeleinkkel való folyamatos
+            együttműködés.
           </p>
           <p>
-            At Studio, we’re more than just colleagues — we’re a family. This
-            means we pay very little and expect people to work late. We want our
-            employees to bring their whole selves to work. In return, we just
-            ask that they keep themselves there until at least 6:30pm.
+            Mindegy, hogy weboldalról, generatív AI-ről, e-kereskedelmi
+            rendszerről vagy komplex alkalmazásokról van szó, a Wenovate
+            partnerei számíthatnak a minőségre és a szakértelemre.
           </p>
         </div>
       </PageIntro>
       <Container className="mt-16">
         <StatList>
-          <StatListItem value="35" label="Underpaid employees" />
-          <StatListItem value="52" label="Placated clients" />
-          <StatListItem value="$25M" label="Invoices billed" />
+          <StatListItem value="100%" label="Ügyfélközpontú megközelítés" />
+          <StatListItem value="10+" label="Megvalósított projekt" />
+          <StatListItem value="7+" label="Évnyi tapasztalat" />
         </StatList>
       </Container>
 
       <Culture />
 
-      <Team />
+      {/* <Team /> */}
 
       <PageLinks
-        className="mt-24 sm:mt-32 lg:mt-40"
-        title="From the blog"
-        intro="Our team of experienced designers and developers has just one thing on their mind; working on your ideas to draw a smile on the face of your users worldwide. From conducting Brand Sprints to UX Design."
+        // className="mt-24 sm:mt-32 lg:mt-40"
+        title="Blog"
+        intro="Ismerje meg legújabb technológiai megoldásainkat és projektjeink történeteit, amelyek inspirálhatják következő lépéseit."
         pages={blogArticles}
       />
 

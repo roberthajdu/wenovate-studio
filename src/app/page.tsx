@@ -9,27 +9,15 @@ import { List, ListItem } from '@/components/List'
 import { SectionIntro } from '@/components/SectionIntro'
 import { StylizedImage } from '@/components/StylizedImage'
 import { Testimonial } from '@/components/Testimonial'
-import logoBrightPath from '@/images/clients/bright-path/logo-light.svg'
-import logoFamilyFund from '@/images/clients/family-fund/logo-light.svg'
-import logoGreenLife from '@/images/clients/green-life/logo-light.svg'
-import logoHomeWork from '@/images/clients/home-work/logo-light.svg'
-import logoMailSmirk from '@/images/clients/mail-smirk/logo-light.svg'
-import logoNorthAdventures from '@/images/clients/north-adventures/logo-light.svg'
+import logoFerfikolcsonbeLight from '@/images/clients/ferfikolcsonbe/logo2-min.webp'
+import logoMkszLight from '@/images/clients/mksz/MKSZ_Logo_horizontal_white.png'
 import logoPhobiaDark from '@/images/clients/phobia/logo-dark.svg'
-import logoPhobiaLight from '@/images/clients/phobia/logo-light.svg'
-import logoUnseal from '@/images/clients/unseal/logo-light.svg'
 import imageLaptop from '@/images/laptop.jpg'
 import { type CaseStudy, type MDXEntry, loadCaseStudies } from '@/lib/mdx'
 
 const clients = [
-  ['Phobia', logoPhobiaLight],
-  ['Family Fund', logoFamilyFund],
-  ['Unseal', logoUnseal],
-  ['Mail Smirk', logoMailSmirk],
-  ['Home Work', logoHomeWork],
-  ['Green Life', logoGreenLife],
-  ['Bright Path', logoBrightPath],
-  ['North Adventures', logoNorthAdventures],
+  ['MKSZ', logoMkszLight],
+  ['Férfikölcsönbe', logoFerfikolcsonbeLight],
 ]
 
 function Clients() {
@@ -38,7 +26,7 @@ function Clients() {
       <Container>
         <FadeIn className="flex items-center gap-x-8">
           <h2 className="text-center font-display text-sm font-semibold tracking-wider text-white sm:text-left">
-            We’ve worked with hundreds of amazing people
+            Büszkék vagyunk ügyfeleink sikerére
           </h2>
           <div className="h-px flex-auto bg-neutral-800" />
         </FadeIn>
@@ -50,7 +38,12 @@ function Clients() {
             {clients.map(([client, logo]) => (
               <li key={client}>
                 <FadeIn>
-                  <Image src={logo} alt={client} unoptimized />
+                  <Image
+                    src={logo}
+                    alt={client}
+                    unoptimized
+                    className="h-auto w-48"
+                  />
                 </FadeIn>
               </li>
             ))}
@@ -69,14 +62,10 @@ function CaseStudies({
   return (
     <>
       <SectionIntro
-        title="Harnessing technology for a brighter future"
+        title="Innováció, ami működik."
         className="mt-24 sm:mt-32 lg:mt-40"
       >
-        <p>
-          We believe technology is the answer to the world’s greatest
-          challenges. It’s also the cause, so we find ourselves in bit of a
-          catch 22 situation.
-        </p>
+        <p>Lásd, hogyan alakítjuk át az ötleteket eredménnyé.</p>
       </SectionIntro>
       <Container className="mt-16">
         <FadeInStagger className="grid grid-cols-1 gap-8 lg:grid-cols-3">
@@ -125,13 +114,14 @@ function Services() {
   return (
     <>
       <SectionIntro
-        eyebrow="Services"
-        title="We help you identify, explore and respond to new opportunities."
+        eyebrow="Szolgáltatásaink"
+        title="Segítünk új lehetőségeket felfedezni és kiaknázni."
         className="mt-24 sm:mt-32 lg:mt-40"
       >
         <p>
-          As long as those opportunities involve giving us money to re-purpose
-          old projects — we can come up with an endless number of those.
+          Legyen szó weboldalakról, alkalmazásokról vagy AI megoldásokról,
+          szakértő csapatunkkal mindig az Ön igényeire szabott megoldásokat
+          kínálunk.
         </p>
       </SectionIntro>
       <Container className="mt-16">
@@ -146,24 +136,28 @@ function Services() {
             </FadeIn>
           </div>
           <List className="mt-16 lg:mt-0 lg:w-1/2 lg:min-w-[33rem] lg:pl-4">
-            <ListItem title="Web development">
-              We specialise in crafting beautiful, high quality marketing pages.
-              The rest of the website will be a shell that uses lorem ipsum
-              everywhere.
+            <ListItem title="Modern webfejlesztés">
+              Akár lenyűgöző marketing oldalakról, akár dinamikus webshop
+              platformokról van szó, olyan weboldalakat készítünk, amelyek
+              összhangban állnak a márkáddal és célközönségeddel.Munkánk gyors,
+              könnyen hozzáférhető és környezetbarát.
             </ListItem>
-            <ListItem title="Application development">
-              We have a team of skilled developers who are experts in the latest
-              app frameworks, like Angular 1 and Google Web Toolkit.
+            <ListItem title="Mobilalkalmazások">
+              Egyedi mobil megoldásaink révén mindig csak egy érintésre vagy az
+              ügyfeleidtől. Készítsünk egy olyan alkalmazást, ami olyanegyedi,
+              mint a vállalkozásod.
             </ListItem>
-            <ListItem title="E-commerce">
-              We are at the forefront of modern e-commerce development. Which
-              mainly means adding your logo to the Shopify store template we’ve
-              used for the past six years.
+            <ListItem title="AI megoldások">
+              Az AI integrációval új szintre emeljük vállalkozásodat. Legyen szó
+              ügyfélkapcsolatokról, belső folyamatok automatizálásáról vagy
+              adatelemzésről, az AI segít abban, hogy mindig egy lépéssel
+              előrébb járj.
             </ListItem>
-            <ListItem title="Custom content management">
-              At Studio we understand the importance of having a robust and
-              customised CMS. That’s why we run all of our client projects out
-              of a single, enormous Joomla instance.
+            <ListItem title="Digitális transzformáció">
+              Tanácsadás és támogatás a digitális transzformációban. Segítünk a
+              vállalkozásodnak a digitális világban való eligazodásban, és a
+              legújabb technológiák alkalmazásában a vállalkozásod növekedése
+              érdekében.
             </ListItem>
           </List>
         </div>
@@ -182,15 +176,20 @@ export default async function Home() {
 
   return (
     <>
-      <Container className="mt-24 sm:mt-32 md:mt-56">
-        <FadeIn className="max-w-3xl">
-          <h1 className="font-display text-5xl font-medium tracking-tight text-neutral-950 [text-wrap:balance] sm:text-7xl">
-            Award-winning development studio based in Denmark.
+      <Container className="mx-auto mt-24 sm:mt-32 md:mt-56">
+        <FadeIn className="max-w-5xl">
+          <h1 className="font-display text-5xl font-bold leading-tight tracking-tighter text-neutral-950 [text-wrap:balance] sm:text-7xl">
+            Fedezd fel a{' '}
+            <span className="bg-gradient-to-r from-emerald-600 to-sky-600 bg-clip-text text-transparent dark:from-emerald-400 dark:to-sky-400">
+              digitális jövőt
+            </span>{' '}
+            velünk!
           </h1>
           <p className="mt-6 text-xl text-neutral-600">
-            We are a development studio working at the intersection of design
-            and technology. It’s a really busy intersection though — a lot of
-            our staff have been involved in hit and runs.
+            Az általunk készített weboldalakat és alkalmazásokat innovatív és
+            kreatív megoldásokkal tesszük egyedivé és személyre szabottá. Modern
+            munkáink személyes élményt nyújtanak a felhasználóknak a felgyorsult
+            online világban.
           </p>
         </FadeIn>
       </Container>
@@ -201,11 +200,11 @@ export default async function Home() {
 
       <Testimonial
         className="mt-24 sm:mt-32 lg:mt-40"
-        client={{ name: 'Phobia', logo: logoPhobiaDark }}
+        client={{ name: 'Zsiga Gyula', logo: logoPhobiaDark }}
       >
-        The team at Studio went above and beyond with our onboarding, even
-        finding a way to access the user’s microphone without triggering one of
-        those annoying permission dialogs.
+        A Wenovate csapata a tökéletes partnert jelentette számomra a blogom
+        megalkotásában. Minden elvárásomat túlszárnyalták – szívből ajánlom
+        őket!
       </Testimonial>
 
       <Services />

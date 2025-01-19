@@ -11,13 +11,15 @@ import { StylizedImage } from '@/components/StylizedImage'
 import { Testimonial } from '@/components/Testimonial'
 import logoFerfikolcsonbeLight from '@/images/clients/ferfikolcsonbe/logo2-min.webp'
 import logoMkszLight from '@/images/clients/mksz/MKSZ_Logo_horizontal_white.png'
-import logoPhobiaDark from '@/images/clients/phobia/logo-dark.svg'
+import logoZsigaGyulaLight from '@/images/clients/zsiga-gyula/logo-white.png'
+import logoZsigaGyula from '@/images/clients/zsiga-gyula/logo.webp'
 import imageLaptop from '@/images/laptop.jpg'
 import { type CaseStudy, type MDXEntry, loadCaseStudies } from '@/lib/mdx'
 
 const clients: [string, StaticImageData][] = [
   ['MKSZ', logoMkszLight],
   ['Férfikölcsönbe', logoFerfikolcsonbeLight],
+  ['Zsiga Gyula', logoZsigaGyulaLight],
 ]
 
 function Clients() {
@@ -42,7 +44,7 @@ function Clients() {
                     src={logo}
                     alt={client}
                     unoptimized
-                    className="h-auto w-48"
+                    className="h-9 w-auto"
                   />
                 </FadeIn>
               </li>
@@ -78,7 +80,7 @@ function CaseStudies({
                     <Image
                       src={caseStudy.logo}
                       alt={caseStudy.client}
-                      className="h-16 w-16"
+                      className="h-16 w-auto"
                       unoptimized
                     />
                   </Link>
@@ -168,7 +170,7 @@ function Services() {
 
 export const metadata: Metadata = {
   description:
-    'We are a development studio working at the intersection of design and technology.',
+    'Az általunk készített weboldalakat és alkalmazásokat innovatív és kreatív megoldásokkal tesszük egyedivé és személyre szabottá. Modern munkáink személyes élményt nyújtanak a felhasználóknak a felgyorsult online világban.',
 }
 
 export default async function Home() {
@@ -178,7 +180,7 @@ export default async function Home() {
     <>
       <Container className="mx-auto mt-24 sm:mt-32 md:mt-56">
         <FadeIn className="max-w-5xl">
-          <h1 className="font-display text-5xl font-bold leading-tight tracking-tighter text-neutral-950 [text-wrap:balance] sm:text-7xl">
+          <h1 className="font-display text-5xl font-bold leading-tight tracking-tighter text-[#0f1d07] [text-wrap:balance] sm:text-7xl">
             Fedezd fel a{' '}
             <span className="bg-gradient-to-r from-emerald-600 to-sky-600 bg-clip-text text-transparent dark:from-emerald-400 dark:to-sky-400">
               digitális jövőt
@@ -200,7 +202,7 @@ export default async function Home() {
 
       <Testimonial
         className="mt-24 sm:mt-32 lg:mt-40"
-        client={{ name: 'Zsiga Gyula', logo: logoPhobiaDark }}
+        client={{ name: 'Zsiga Gyula', logo: logoZsigaGyula }}
       >
         A Wenovate csapata a tökéletes partnert jelentette számomra a blogom
         megalkotásában. Minden elvárásomat túlszárnyalták – szívből ajánlom

@@ -55,6 +55,8 @@ export async function sendEmail(formData: ContactFormData) {
       resend.emails.send(internalEmail),
     ])
 
+    await new Promise((resolve) => setTimeout(resolve, 2000))
+
     const { data, error } = await resend.contacts.create({
       email: email,
       firstName: name,

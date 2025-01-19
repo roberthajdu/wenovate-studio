@@ -21,6 +21,7 @@ const budgetRanges = {
 }
 
 export async function sendEmail(formData: ContactFormData) {
+  console.log('sendEmail', formData)
   try {
     const { name, email, company, phone, message, budget } = formData
 

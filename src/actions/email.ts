@@ -1,5 +1,7 @@
 'use server'
 
+import { ExternalEmailTemplate } from '@/components/email-template-external'
+import { InternalEmailTemplate } from '@/components/email-template-internal'
 import { Resend } from 'resend'
 
 const resend = new Resend(process.env.RESEND_API_KEY)
@@ -25,20 +27,41 @@ export async function sendEmail(formData: ContactFormData) {
   try {
     const { name, email, company, phone, message, budget } = formData
 
-    await resend.emails.send({
-      from: 'contact@wenovate.hu',
-      to: 'hello@wenovate.hu',
-      subject: `New Contact Form Submission from ${name}`,
-      html: `
-        <h2>New Contact Form Submission</h2>
-        <p><strong>Name:</strong> ${name}</p>
-        <p><strong>Email:</strong> ${email}</p>
-        <p><strong>Company:</strong> ${company}</p>
-        <p><strong>Phone:</strong> ${phone}</p>
-        <p><strong>Budget Range:</strong> ${budgetRanges[budget as keyof typeof budgetRanges]}</p>
-        <p><strong>Message:</strong> ${message}</p>
-      `,
+    const internalEmail = {
+      from: 'Wenovate.io <noreply@wenovate.io>',
+      to: ['hajdurobi19@gmail.com'],
+      subject: 'Új megkeresés érkezett a weboldalon keresztül.',
+      react: InternalEmailTemplate({
+        name: name,
+        message: message,
+        company: company,
+        phone: phone,
+        budget: budgetRanges[budget as keyof typeof budgetRanges],
+      }),
+    }
+
+    const externalEmail = {
+      from: 'Dorka a Wenovate-től <info@wenovate.io>',
+      to: [email],
+      subject: 'Köszönjük a megkeresésed!',
+      react: ExternalEmailTemplate({
+        name: name,
+      }),
+    }
+
+    const results = await Promise.all([
+      resend.emails.send(externalEmail),
+      new Promise((resolve) => setTimeout(resolve, 5000)),
+      resend.emails.send(internalEmail),
+    ])
+
+    const { data, error } = await resend.contacts.create({
+      email: email,
+      firstName: name,
+      audienceId: 'b449a00d-e1cd-424f-af32-2996ccd029fc',
     })
+
+    console.log(data, error)
 
     return { success: true }
   } catch (error) {

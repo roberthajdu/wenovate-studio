@@ -4,6 +4,7 @@ import { RootLayout } from '@/components/RootLayout'
 import localFont from 'next/font/local'
 
 import '@/styles/tailwind.css'
+import Script from 'next/script'
 
 const dietherRound = localFont({
   variable: '--font-dietherRound',
@@ -47,6 +48,11 @@ export default function Layout({ children }: { children: React.ReactNode }) {
       <body className="flex min-h-full flex-col">
         <RootLayout>{children}</RootLayout>
       </body>
+      <Script
+        defer
+        src="https://cloud.umami.is/script.js"
+        data-website-id="1c9fd71e-a19d-46ae-9dc3-eb7a453965af"
+      ></Script>
     </html>
   )
 }

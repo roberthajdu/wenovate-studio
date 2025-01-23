@@ -1,7 +1,6 @@
 import { Button } from '@/components/Button'
 import { Container } from '@/components/Container'
 import { FadeIn } from '@/components/FadeIn'
-import { Offices } from '@/components/Offices'
 
 export function ContactSection() {
   return (
@@ -10,8 +9,13 @@ export function ContactSection() {
         <div className="mx-auto max-w-4xl">
           <div className="max-w-xl">
             <h2 className="font-display text-3xl font-medium text-white [text-wrap:balance] sm:text-4xl">
-            Van egy ötleted? Valósítsuk meg együtt!
+              Beszélgessünk a projektedről!
             </h2>
+            <h3 className="mt-3 text-white">
+              Ne hagyd, hogy ötleteid megvalósítatlanok maradjanak! Vedd fel
+              velünk a kapcsolatot, és dolgozzunk együtt egyedülálló digitális
+              megoldásaidon!{' '}
+            </h3>
             <div className="mt-6 flex">
               <Button href="/contact" invert>
                 Kapcsolat

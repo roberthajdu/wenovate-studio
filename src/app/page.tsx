@@ -27,7 +27,7 @@ function Clients() {
     <div className="mt-24 rounded-4xl bg-neutral-950 py-20 sm:mt-32 sm:py-32 lg:mt-56">
       <Container>
         <FadeIn className="flex items-center gap-x-8">
-          <h2 className="text-center font-display text-sm font-semibold tracking-wider text-white sm:text-left">
+          <h2 className="text-center font-display text-sm tracking-wider text-white sm:text-left">
             Büszkék vagyunk ügyfeleink sikerére
           </h2>
           <div className="h-px flex-auto bg-neutral-800" />
@@ -64,10 +64,14 @@ function CaseStudies({
   return (
     <>
       <SectionIntro
-        title="Innováció, ami működik."
+        title="A kreatív megoldások otthona"
         className="mt-24 sm:mt-32 lg:mt-40"
       >
-        <p>Lásd, hogyan alakítjuk át az ötleteket eredménnyé.</p>
+        <p>
+          Mi nem csak alkalmazásokat hozunk létre - élményeket teremtünk! Nézd
+          meg néhány sikeres projektünket, és képzeld el, mit tudnánk együtt
+          létrehozni.{' '}
+        </p>
       </SectionIntro>
       <Container className="mt-16">
         <FadeInStagger className="grid grid-cols-1 gap-8 lg:grid-cols-3">
@@ -117,13 +121,13 @@ function Services() {
     <>
       <SectionIntro
         eyebrow="Szolgáltatásaink"
-        title="Segítünk új lehetőségeket felfedezni és kiaknázni."
+        title="Innovatív megoldások, lépéselőny az üzleti világban.  "
         className="mt-24 sm:mt-32 lg:mt-40"
       >
         <p>
-          Legyen szó weboldalakról, alkalmazásokról vagy AI megoldásokról,
-          szakértő csapatunkkal mindig az Ön igényeire szabott megoldásokat
-          kínálunk.
+          Legyen szó webfejlesztésről, mobilalkalmazásokról vagy mesterséges
+          intelligencia alapú rendszerekről, mi mindig arra törekszünk, hogy a
+          legjobbat hozzuk ki projektjeidből.
         </p>
       </SectionIntro>
       <Container className="mt-16">
@@ -139,27 +143,23 @@ function Services() {
           </div>
           <List className="mt-16 lg:mt-0 lg:w-1/2 lg:min-w-[33rem] lg:pl-4">
             <ListItem title="Modern webfejlesztés">
-              Akár lenyűgöző marketing oldalakról, akár dinamikus webshop
-              platformokról van szó, olyan weboldalakat készítünk, amelyek
-              összhangban állnak a márkáddal és célközönségeddel.Munkánk gyors,
-              könnyen hozzáférhető és környezetbarát.
+              Egy professzionális, reszponzív weboldal az első benyomás alapja.
+              Gondoskodunk róla, hogy az oldalad kiválóan nézzen ki és működjön
+              minden eszközön.
             </ListItem>
             <ListItem title="Mobilalkalmazások">
-              Egyedi mobil megoldásaink révén mindig csak egy érintésre vagy az
-              ügyfeleidtől. Készítsünk egy olyan alkalmazást, ami olyanegyedi,
-              mint a vállalkozásod.
+              Naprakész, felhasználóbarát és üzleti igényekre szabott
+              mobilappokat készítünk, amelyek közvetlenül eljuttatják
+              ügyfeleidhez vállalkozásod értékeit.
             </ListItem>
             <ListItem title="AI megoldások">
-              Az AI integrációval új szintre emeljük vállalkozásodat. Legyen szó
-              ügyfélkapcsolatokról, belső folyamatok automatizálásáról vagy
-              adatelemzésről, az AI segít abban, hogy mindig egy lépéssel
-              előrébb járj.
+              Mesterséges intelligencia technológiákkal segítjük céged
+              automatizációját és fejlődését a modern piaci igényekhez igazodva.
             </ListItem>
             <ListItem title="Digitális transzformáció">
-              Tanácsadás és támogatás a digitális transzformációban. Segítünk a
-              vállalkozásodnak a digitális világban való eligazodásban, és a
-              legújabb technológiák alkalmazásában a vállalkozásod növekedése
-              érdekében.
+              Folyamataid optimalizálása és modernizálása a hosszú távú siker
+              érdekében. Együtt készítjük el azt a digitális stratégiát, amely
+              előreviszi cégedet.
             </ListItem>
           </List>
         </div>
@@ -181,17 +181,15 @@ export default async function Home() {
       <Container className="mx-auto mt-24 sm:mt-32 md:mt-56">
         <FadeIn className="max-w-5xl">
           <h1 className="font-display text-5xl font-bold leading-tight tracking-tighter text-[#0f1d07] [text-wrap:balance] sm:text-7xl">
-            Fedezd fel a{' '}
+            Fejlesszük együtt a{' '}
             <span className="bg-gradient-to-r from-emerald-600 to-sky-600 bg-clip-text text-transparent dark:from-emerald-400 dark:to-sky-400">
-              digitális jövőt
+              digitális jövődet
             </span>{' '}
-            velünk!
+            🚀
           </h1>
           <p className="mt-6 text-xl text-neutral-600">
-            Az általunk készített weboldalakat és alkalmazásokat innovatív és
-            kreatív megoldásokkal tesszük egyedivé és személyre szabottá. Modern
-            munkáink személyes élményt nyújtanak a felhasználóknak a felgyorsult
-            online világban.
+            Egyedi szoftvermegoldások, amelyek a te üzleted sikerét szolgálják.
+            Bízd ránk a fejlesztést, és élvezd az innováció előnyeit már ma!
           </p>
         </FadeIn>
       </Container>

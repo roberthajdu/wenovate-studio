@@ -27,29 +27,25 @@ import { loadArticles } from '@/lib/mdx'
 function Culture() {
   return (
     <div className="mt-24 rounded-4xl bg-neutral-950 py-24 sm:mt-32 lg:mt-40 lg:py-32">
-      <SectionIntro
-        eyebrow="Kultúránk"
-        title="Találd meg az egyensúlyt a szenvedélyed és az életed között."
-        invert
-      >
+      <SectionIntro eyebrow="Értékeink" title="Innováció és szenvedély" invert>
         <p>
-          Hiszünk az együttműködés erejében, amely minden projektünk
-          középpontjában áll.
+          Hiszünk abban, hogy az innováció és a szenvedély kéz a kézben járnak,
+          és ezek vezérelnek minket abban, hogy minden projektet egyedülálló
+          kreativitással és elkötelezettséggel valósítsunk meg.
         </p>
       </SectionIntro>
       <Container className="mt-16">
         <GridList>
-          <GridListItem title="Elkötelezettség" invert>
-            Minden ügyfélprojektet maximális figyelemmel és szakértelemmel
-            kezelünk, hogy a lehető legjobb eredményt érjük el.
+          <GridListItem title="🎉 Szenvedély és egyensúly" invert>
+            A munkánk a szenvedélyünk, de megértjük, hogy az élet több mint csak
+            munka. Ezért teremtünk harmonikus egyensúlyt minden projektben.
           </GridListItem>
-          <GridListItem title="Rugalmasság" invert>
-            Rugalmasan alkalmazkodunk ügyfeleink igényeihez, legyen szó kis vagy
-            közepes méretű vállalkozásokról.
+          <GridListItem title="🤝 Elkötelezettség és alkalmazkodás" invert>
+            Rugalmasan reagálunk igényeidre, és mindig veled együtt gondolkodva
+            alakítjuk ki a tökéletes megoldásokat.
           </GridListItem>
-          <GridListItem title="Innováció" invert>
-            A legmodernebb technológiákat és megoldásokat alkalmazzuk, hogy
-            ügyfeleink kiemelkedjenek a versenytársak közül.
+          <GridListItem title="🚀 Innováció mindenek felett" invert>
+            A jövőt építjük a legkorszerűbb technológiákkal és friss ötletekkel.
           </GridListItem>
         </GridList>
       </Container>
@@ -192,24 +188,23 @@ export default async function About() {
     <>
       <PageIntro
         eyebrow="Rólunk"
-        title="Digitális megoldások, amelyek előre visznek"
+        title="Kivételes digitális megoldások vállalkozásodnak"
       >
         <p>
-          A Wenovate elkötelezett amellett, hogy ügyfeleinek magas színvonalú
-          technológiai szolgáltatásokat nyújtson. A célunk, hogy minden projekt
-          a lehető legjobban tükrözze ügyfeleink vízióját és célkitűzéseit.
+          A Wenovate nem csak egy digitális fejlesztő stúdió – velünk olyan
+          partnert kapsz, aki a sikeredre fókuszál. Minden projekt számunkra egy
+          közös utazás, ahol az együttműködés a kulcs az eredményekhez.
         </p>
         <div className="mt-10 max-w-2xl space-y-6 text-base">
           <p>
-            A Wenovate azért jött létre, hogy egyedi és hatékony digitális
-            megoldásokat kínáljon. Hiszünk abban, hogy minden sikeres projekt
-            alapja a közös gondolkodás és az ügyfeleinkkel való folyamatos
-            együttműködés.
+            Célunk, hogy modern technológiákkal, innovatív szemlélettel és
+            kiemelkedő minőséggel támogassuk ügyfeleinket.
           </p>
           <p>
-            Mindegy, hogy weboldalról, generatív AI-ről, e-kereskedelmi
-            rendszerről vagy komplex alkalmazásokról van szó, a Wenovate
-            partnerei számíthatnak a minőségre és a szakértelemre.
+            Készen állsz arra, hogy kiemelkedj a versenytársak közül és elérd a
+            kitűzött céljaidat? Mi itt vagyunk, hogy támogassunk minden
+            lépésnél, legyen szó stratégiáról, megvalósításról vagy a siker
+            eléréséről!
           </p>
         </div>
       </PageIntro>
@@ -228,7 +223,7 @@ export default async function About() {
       <PageLinks
         // className="mt-24 sm:mt-32 lg:mt-40"
         title="Blog"
-        intro="Ismerje meg legújabb technológiai megoldásainkat és projektjeink történeteit, amelyek inspirálhatják következő lépéseit."
+        intro="Megosztjuk azokat az inspiráló irasainkat, amelyek bizonyítják, hogy szenvedéllyel és innovációval bármi lehetséges. Fedezd fel a friss nézőpontokat és ötleteket, amelyek új lendületet adhatnak terveidnek!  "
         pages={blogArticles}
       />
 

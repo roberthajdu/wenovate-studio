@@ -27,25 +27,30 @@ import { loadArticles } from '@/lib/mdx'
 function Culture() {
   return (
     <div className="mt-24 rounded-4xl bg-neutral-950 py-24 sm:mt-32 lg:mt-40 lg:py-32">
-      <SectionIntro eyebrow="Értékeink" title="Innováció és szenvedély" invert>
+      <SectionIntro
+        eyebrow="Értékeink"
+        title="Innováció. Partnerség. Minőség."
+        invert
+      >
         <p>
-          Hiszünk abban, hogy az innováció és a szenvedély kéz a kézben járnak,
-          és ezek vezérelnek minket abban, hogy minden projektet egyedülálló
-          kreativitással és elkötelezettséggel valósítsunk meg.
+          Hiszünk abban, hogy az üzleti siker alapja a folyamatos fejlődés, az
+          együttműködés és a kiváló kivitelezés.
         </p>
       </SectionIntro>
       <Container className="mt-16">
         <GridList>
-          <GridListItem title="🎉 Szenvedély és egyensúly" invert>
-            A munkánk a szenvedélyünk, de megértjük, hogy az élet több mint csak
-            munka. Ezért teremtünk harmonikus egyensúlyt minden projektben.
+          <GridListItem title="🎉 Egyensúly és elkötelezettség" invert>
+            Szenvedéllyel végezzük a munkánkat, de megértjük az üzleti élet
+            komplexitását is. Minden projektben a hosszú távú egyensúlyra
+            törekszünk.
           </GridListItem>
-          <GridListItem title="🤝 Elkötelezettség és alkalmazkodás" invert>
-            Rugalmasan reagálunk igényeidre, és mindig veled együtt gondolkodva
-            alakítjuk ki a tökéletes megoldásokat.
+          <GridListItem title="🤝 Rugalmasság és alkalmazkodás" invert>
+            Minden ügyfél egyedi. Rugalmasan igazodunk az igényekhez, és közösen
+            alakítjuk ki a legjobb megoldást.
           </GridListItem>
-          <GridListItem title="🚀 Innováció mindenek felett" invert>
-            A jövőt építjük a legkorszerűbb technológiákkal és friss ötletekkel.
+          <GridListItem title="🚀 Innováció fókuszú gondolkodás" invert>
+            A legmodernebb technológiákat és friss ötleteket használjuk, hogy
+            versenyelőnyt teremtsünk ügyfeleink számára.
           </GridListItem>
         </GridList>
       </Container>
@@ -177,8 +182,7 @@ function Team() {
 
 export const metadata: Metadata = {
   title: 'Rólunk',
-  description:
-    'Hiszünk abban, hogy az erőnk az együttműködésben rejlik, amely ügyfeleinket helyezi a középpontba.',
+  description: 'Modern digitális megoldások az üzleti sikereidért',
 }
 
 export default async function About() {
@@ -188,31 +192,38 @@ export default async function About() {
     <>
       <PageIntro
         eyebrow="Rólunk"
-        title="Kivételes digitális megoldások vállalkozásodnak"
+        title="Modern digitális megoldások az üzleti sikereidért"
       >
         <p>
-          A Wenovate nem csak egy digitális fejlesztő stúdió – velünk olyan
-          partnert kapsz, aki a sikeredre fókuszál. Minden projekt számunkra egy
-          közös utazás, ahol az együttműködés a kulcs az eredményekhez.
+          A Wenovate nem csupán egy fejlesztőstúdió – üzleti partnerként
+          kísérünk végig a digitális átalakulásod útján.
         </p>
         <div className="mt-10 max-w-2xl space-y-6 text-base">
           <p>
-            Célunk, hogy modern technológiákkal, innovatív szemlélettel és
-            kiemelkedő minőséggel támogassuk ügyfeleinket.
+            Számunkra minden projekt egy közös munka, ahol a technológiai
+            szakértelem és az üzleti megértés kéz a kézben jár.
           </p>
           <p>
-            Készen állsz arra, hogy kiemelkedj a versenytársak közül és elérd a
-            kitűzött céljaidat? Mi itt vagyunk, hogy támogassunk minden
-            lépésnél, legyen szó stratégiáról, megvalósításról vagy a siker
-            eléréséről!
+            Célunk, hogy modern technológiákkal, üzleti szemlélettel és magas
+            színvonalú kivitelezéssel segítsünk ügyfeleinknek elérni céljaikat.
+            Legyen szó webes vagy mobilalkalmazás-fejlesztésről, mesterséges
+            intelligencia alapú megoldásokról vagy digitális stratégiáról, a
+            Wenovate a stabil háttér, amire számíthatsz.
+          </p>
+          <p>
+            Készen állsz, hogy szintet lépj vállalkozásoddal? Mi végigkísérünk a
+            tervezéstől a megvalósításon át a növekedésig.
           </p>
         </div>
       </PageIntro>
       <Container className="mt-16">
         <StatList>
-          <StatListItem value="100%" label="Ügyfélközpontú megközelítés" />
-          <StatListItem value="10+" label="Megvalósított projekt" />
-          <StatListItem value="7+" label="Évnyi tapasztalat" />
+          <StatListItem value="100%" label="ügyfélközpontú megközelítés" />
+          <StatListItem value="10+" label="sikeresen megvalósított projekt" />
+          <StatListItem
+            value="7+"
+            label="év tapasztalat szoftverfejlesztésben és digitális innovációban"
+          />
         </StatList>
       </Container>
 
@@ -223,7 +234,8 @@ export default async function About() {
       <PageLinks
         // className="mt-24 sm:mt-32 lg:mt-40"
         title="Blog"
-        intro="Megosztjuk azokat az inspiráló irasainkat, amelyek bizonyítják, hogy szenvedéllyel és innovációval bármi lehetséges. Fedezd fel a friss nézőpontokat és ötleteket, amelyek új lendületet adhatnak terveidnek!  "
+        intro="A Wenovate blogban szakmai tapasztalatainkat, friss technológiai trendeket és gyakorlati tanácsokat osztunk meg.
+Fedezd fel, hogyan segíthet az innováció és a modern technológia a vállalkozásod növekedésében!"
         pages={blogArticles}
       />
 

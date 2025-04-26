@@ -9,16 +9,15 @@ export function ContactSection() {
         <div className="mx-auto max-w-4xl">
           <div className="max-w-xl">
             <h2 className="font-display text-3xl font-medium text-white [text-wrap:balance] sm:text-4xl">
-              Beszélgessünk a projektedről!
+              Ne hagyd az ötleteidet a fiókban!
             </h2>
             <h3 className="mt-3 text-white">
-              Ne hagyd, hogy ötleteid megvalósítatlanok maradjanak! Vedd fel
-              velünk a kapcsolatot, és dolgozzunk együtt egyedülálló digitális
-              megoldásaidon!{' '}
+              Beszélgessünk a projektedről – megmutatjuk, hogyan válhat belőle
+              sikeres digitális megoldás.
             </h3>
             <div className="mt-6 flex">
               <Button href="/contact" invert>
-                Kapcsolat
+                Vedd fel velünk a kapcsolatot
               </Button>
             </div>
             {/* <div className="mt-10 border-t border-white/10 pt-10">

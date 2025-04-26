@@ -56,29 +56,21 @@ function Discover() {
   return (
     <Section title="Felfedezés" image={{ src: imageWhiteboard }}>
       <div className="space-y-6 text-base text-neutral-600">
+        <p>Az együttműködés az alapos megértéssel kezdődik.</p>
         <p>
-          Ismerjük meg egymást. Alaposan feltérképezzük vállalkozásod{' '}
-          <strong className="font-semibold text-neutral-950">céljait</strong>,
-          közönségedet és a működésed részleteit. Itt kezdődik a varázslat.
-        </p>
-        <p>
-          Ezen a fázison belül közösen dolgozunk ki{' '}
-          <strong className="font-semibold text-neutral-950">
-            kérdőíveket
-          </strong>
-          , megvalósíthatósági tanulmányokat és koncepciókat, amelyek
-          biztosítják az alapokat a következő lépésekhez.
+          Feltérképezzük vállalkozásod céljait, a célközönséget és a működési
+          környezetet, hogy szilárd alapokat teremtsünk a projektedhez.
         </p>
       </div>
 
       <h3 className="mt-12 font-display text-base font-semibold text-neutral-950">
-        Ezen a fázison belül
+        Ezen a fázison belül:
       </h3>
       <TagList className="mt-4">
         <TagListItem>Mélyinterjúk</TagListItem>
         <TagListItem>Versenyelemzés</TagListItem>
         <TagListItem>Üzleti célok meghatározása</TagListItem>
-        <TagListItem>Koncepciótervek</TagListItem>
+        <TagListItem>Koncepciótervek kidolgozása</TagListItem>
         <TagListItem>Felmérések és kutatások</TagListItem>
       </TagList>
     </Section>
@@ -90,18 +82,16 @@ function Build() {
     <Section title="Stratégiai tervezés" image={{ src: imageLaptop, shape: 1 }}>
       <div className="space-y-6 text-base text-neutral-600">
         <p>
-          Az első fázis eredményeire építve világos{' '}
-          <strong className="font-semibold text-neutral-950">stratégiát</strong>{' '}
-          dolgozunk ki, amely tartalmazza a projekt minden lépését és
-          mérföldkövét. Az átláthatóság biztosítja, hogy minden pillanatban
-          képben legyél.
+          Az első fázis eredményeire építve részletes stratégiát állítunk össze,
+          amely pontosan lefedi a projekt lépéseit és mérföldköveit.
         </p>
         <p>
-          Emellett kialakítjuk az alapvető{' '}
-          <strong className="font-semibold text-neutral-950">
-            tervezési kereteket
-          </strong>
-          , amelyek segítenek vizualizálni a végső megoldást.
+          Az átláthatóság minden pillanatban biztosított – így mindig tudni
+          fogod, hol tartunk.
+        </p>
+        <p>
+          Emellett kialakítjuk a főbb tervezési kereteket is, hogy a végső
+          megoldás már a kezdetektől kézzelfogható legyen.
         </p>
       </div>
 
@@ -124,17 +114,12 @@ function Deliver() {
     >
       <div className="space-y-6 text-base text-neutral-600">
         <p>
-          A stratégiai terv alapján a legújabb technológiák segítségével
-          fejlesztjük és optimalizáljuk az elképzeléseidet. A{' '}
-          <strong className="font-semibold text-neutral-950">minőség</strong> és{' '}
-          <strong className="font-semibold text-neutral-950">
-            rugalmasság
-          </strong>
-          garantálja, hogy az eredmény tökéletesen illeszkedjen az igényeidhez.
+          A jóváhagyott stratégia alapján fejlesztjük és optimalizáljuk a
+          megoldásodat a legkorszerűbb technológiák alkalmazásával.
         </p>
         <p>
-          Az átfogó tesztelés biztosítja, hogy minden funkció zökkenőmentesen
-          működjön, mielőtt az élesítésre kerül sor.
+          A minőség és a rugalmasság garantálja, hogy az eredmény pontosan
+          megfeleljen az elvárásaidnak.
         </p>
       </div>
 
@@ -143,16 +128,13 @@ function Deliver() {
       </h3>
       <List className="mt-8">
         <ListItem title="Tesztelés">
-          Minden projektünket alaposan teszteljük, hogy biztosítsuk a
-          kifogástalan működést.
+          Teljes körű tesztelés a kifogástalan működésért
         </ListItem>
         <ListItem title="Infrastruktúra">
-          Megbízható technológiai alapokat biztosítunk, amelyek hosszú távon
-          támogatják vállalkozásod.
+          Stabil infrastruktúra kiépítése a hosszú távú siker érdekében
         </ListItem>
         <ListItem title="Támogatás">
-          Az élesítést követően is itt vagyunk, hogy folyamatos segítséget és
-          karbantartást nyújtsunk.
+          Élesítés utáni támogatás és karbantartás
         </ListItem>
       </List>
     </Section>
@@ -167,36 +149,31 @@ function Values() {
         title="Megbízhatóság és innováció egyensúlya"
       >
         <p>
-          A Wenovate-nál elkötelezettek vagyunk amellett, hogy ügyfeleinknek a
-          legújabb technológiákat és trendeket hozzuk el, miközben a
-          megbízhatóságot tartjuk szem előtt.
+          A Wenovate-nál a legfrissebb technológiákat ötvözzük a következetes,
+          megbízható kivitelezéssel.
         </p>
       </SectionIntro>
 
       <Container className="mt-24">
         <GridList>
           <GridListItem title="Precizitás">
-            Az első lépéstől az utolsóig a részletekre való odafigyelés
-            határozza meg a munkánkat.
+            A részletekre való odafigyelés munkánk alapja.
           </GridListItem>
           <GridListItem title="Hatékonyság">
-            Az időd és az erőforrásaid maximális tiszteletben tartásával
-            dolgozunk.
+            Az idődet és az erőforrásaidat tiszteletben tartva dolgozunk.
           </GridListItem>
           <GridListItem title="Rugalmasság">
-            Egyedi igényeidhez igazítjuk a megoldásokat, hogy a legjobban
-            szolgálják a céljaidat.
+            Az egyedi igényeidhez igazítjuk megoldásainkat.
           </GridListItem>
           <GridListItem title="Őszinteség">
-            Átlátható és tiszta kommunikációval építünk bizalmat.
+            Átlátható kommunikációval építünk bizalmat.
           </GridListItem>
           <GridListItem title="Hűség">
-            Hosszú távú partnerségeket építünk, amelyek az ügyfeleink sikereit
-            támogatják.
+            Hosszú távú partnerségekben gondolkodunk.
           </GridListItem>
           <GridListItem title="Innováció">
-            Mindig keresünk új és jobb megoldásokat, hogy ügyfeleink előnyt
-            szerezzenek.
+            Folyamatosan keressük az új lehetőségeket, hogy versenyelőnyt
+            teremtsünk.
           </GridListItem>
         </GridList>
       </Container>
@@ -213,11 +190,12 @@ export const metadata: Metadata = {
 export default function Process() {
   return (
     <>
-      <PageIntro eyebrow="Folyamatunk" title="Hogyan dolgozunk?">
+      <PageIntro eyebrow="Folyamatunk" title="Hogyan dolgozunk a Wenovate-nál">
         <p>
-          A Wenovate-nál hiszünk abban, hogy a hatékony munkafolyamatok és a
-          modern technológiák együttesen teszik lehetővé ügyfeleink sikereit.
-          Minden projektet az egyedisége alapján kezelünk.
+          A Wenovate hisz abban, hogy a hatékony munkafolyamat és a modern
+          technológia együtt teremti meg a valódi üzleti sikert. Minden
+          projektünket az egyediségéhez igazítjuk, hogy a lehető legjobb
+          megoldást szállíthassuk.
         </p>
       </PageIntro>
 

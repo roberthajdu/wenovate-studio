@@ -64,13 +64,13 @@ function CaseStudies({
   return (
     <>
       <SectionIntro
-        title="A kreatív megoldások otthona"
+        title="A kreatív, üzleti fókuszú megoldások otthona."
         className="mt-24 sm:mt-32 lg:mt-40"
       >
         <p>
-          Mi nem csak alkalmazásokat hozunk létre - élményeket teremtünk! Nézd
-          meg néhány sikeres projektünket, és képzeld el, mit tudnánk együtt
-          létrehozni.{' '}
+          Nem csupán alkalmazásokat fejlesztünk – eredményeket szállítunk.
+          Ismerd meg néhány korábbi projektünket, és képzeld el, mit hozhatnánk
+          létre együtt.
         </p>
       </SectionIntro>
       <Container className="mt-16">
@@ -99,7 +99,7 @@ function CaseStudies({
                   <span className="text-neutral-300" aria-hidden="true">
                     /
                   </span>
-                  <span>Case study</span>
+                  <span>Esettanulmány</span>
                 </p>
                 <p className="mt-6 font-display text-2xl font-semibold text-neutral-950">
                   {caseStudy.title}
@@ -121,7 +121,7 @@ function Services() {
     <>
       <SectionIntro
         eyebrow="Szolgáltatásaink"
-        title="Innovatív megoldások, lépéselőny az üzleti világban.  "
+        title="Innováció, amely kézzelfogható eredményeket hoz."
         className="mt-24 sm:mt-32 lg:mt-40"
       >
         <p>
@@ -143,23 +143,20 @@ function Services() {
           </div>
           <List className="mt-16 lg:mt-0 lg:w-1/2 lg:min-w-[33rem] lg:pl-4">
             <ListItem title="Modern webfejlesztés">
-              Egy professzionális, reszponzív weboldal az első benyomás alapja.
-              Gondoskodunk róla, hogy az oldalad kiválóan nézzen ki és működjön
-              minden eszközön.
+              Professzionális, reszponzív weboldalakat tervezünk és fejlesztünk,
+              hogy az első benyomásod valóban maradandó legyen.
             </ListItem>
             <ListItem title="Mobilalkalmazások">
-              Naprakész, felhasználóbarát és üzleti igényekre szabott
-              mobilappokat készítünk, amelyek közvetlenül eljuttatják
-              ügyfeleidhez vállalkozásod értékeit.
+              Naprakész, felhasználóbarát mobilappokat készítünk, amelyek
+              közvetlenül támogatják az üzleti céljaidat.
             </ListItem>
             <ListItem title="AI megoldások">
-              Mesterséges intelligencia technológiákkal segítjük céged
-              automatizációját és fejlődését a modern piaci igényekhez igazodva.
+              Mesterséges intelligencia alapú rendszerekkel gyorsítjuk fel
+              folyamataidat és nyitunk új növekedési lehetőségeket.
             </ListItem>
             <ListItem title="Digitális transzformáció">
-              Folyamataid optimalizálása és modernizálása a hosszú távú siker
-              érdekében. Együtt készítjük el azt a digitális stratégiát, amely
-              előreviszi cégedet.
+              Segítünk folyamataid optimalizálásában és modernizálásában, hogy
+              céged hosszú távon is versenyképes maradjon.
             </ListItem>
           </List>
         </div>
@@ -188,8 +185,9 @@ export default async function Home() {
             🚀
           </h1>
           <p className="mt-6 text-xl text-neutral-600">
-            Egyedi szoftvermegoldások, amelyek a te üzleted sikerét szolgálják.
-            Bízd ránk a fejlesztést, és élvezd az innováció előnyeit már ma!
+            Webfejlesztés, mobilalkalmazások és mesterséges intelligencia alapú
+            rendszerek: támogatjuk a növekedésedet modern, megbízható
+            technológiával.
           </p>
         </FadeIn>
       </Container>
@@ -202,7 +200,7 @@ export default async function Home() {
         className="mt-24 sm:mt-32 lg:mt-40"
         client={{ name: 'Zsiga Gyula', logo: logoZsigaGyula }}
       >
-        A Wenovate csapata a tökéletes partnert jelentette számomra a blogom
+        A Wenovate csapata tökéletes partner volt számomra a blogom
         megalkotásában. Minden elvárásomat túlszárnyalták – szívből ajánlom
         őket!
       </Testimonial>

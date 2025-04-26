@@ -3,15 +3,22 @@ import { NextRequest } from 'next/server'
 
 export const runtime = 'edge'
 
-// Load custom font
+// Load custom fonts
 const dietherRoundBold = fetch(
   new URL('../../../fonts/DietherRound/DietherRound-Bold.otf', import.meta.url),
 ).then((res) => res.arrayBuffer())
 
+const platypi = fetch(
+  new URL('../../../fonts/Platypi/Platypi[wght].woff2', import.meta.url),
+).then((res) => res.arrayBuffer())
+
 export async function GET(req: NextRequest) {
   try {
-    // Load font
-    const dietherRoundBoldData = await dietherRoundBold
+    // Load fonts
+    const [dietherRoundBoldData, platypiData] = await Promise.all([
+      dietherRoundBold,
+      platypi,
+    ])
 
     const { searchParams } = new URL(req.url)
     const title =
@@ -62,8 +69,8 @@ export async function GET(req: NextRequest) {
             <h1
               style={{
                 fontSize: 64,
-                fontFamily: 'DietherRound',
-                fontWeight: 'bold',
+                fontFamily: 'Platypi',
+                fontWeight: 700,
                 color: '#1e293b',
                 lineHeight: 1.2,
                 margin: 0,
@@ -98,6 +105,12 @@ export async function GET(req: NextRequest) {
           {
             name: 'DietherRound',
             data: dietherRoundBoldData,
+            weight: 700,
+            style: 'normal',
+          },
+          {
+            name: 'Platypi',
+            data: platypiData,
             weight: 700,
             style: 'normal',
           },

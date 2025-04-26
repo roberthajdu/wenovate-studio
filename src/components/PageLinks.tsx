@@ -1,5 +1,5 @@
-import Link from 'next/link'
 import clsx from 'clsx'
+import Link from 'next/link'
 
 import { Border } from '@/components/Border'
 import { Container } from '@/components/Container'
@@ -47,9 +47,9 @@ function PageLink({ page }: { page: Page }) {
         <Link
           href={page.href}
           className="mt-6 flex gap-x-3 text-base font-semibold text-neutral-950 transition hover:text-neutral-700"
-          aria-label={`Read more: ${page.title}`}
+          aria-label={`Tovább olvasom: ${page.title}`}
         >
-          Read more
+          Tovább olvasom
           <ArrowIcon className="w-6 flex-none fill-current" />
           <span className="absolute inset-0" />
         </Link>

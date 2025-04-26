@@ -12,9 +12,18 @@ import { formatDate } from '@/lib/formatDate'
 import { loadArticles } from '@/lib/mdx'
 
 export const metadata: Metadata = {
-  title: 'Blog',
+  title: 'Blog | Wenovate',
   description:
-    'Stay up-to-date with the latest industry news as our marketing teams finds new ways to re-purpose old CSS tricks articles.',
+    'Fejlesztési tapasztalatok, digitális trendek és üzleti megoldások egy helyen. Friss gondolatok a Wenovate blogjából.',
+  openGraph: {
+    title: 'Blog | Wenovate',
+    description:
+      'Fedezd fel a legfrissebb technológiai trendeket, alkalmazásfejlesztési tippeket és üzleti inspirációkat a Wenovate blogjában.',
+    url: 'https://wenovate.io/blog',
+    siteName: 'Wenovate',
+    locale: 'hu_HU',
+    type: 'website',
+  },
 }
 
 export default async function Blog() {
@@ -22,10 +31,11 @@ export default async function Blog() {
 
   return (
     <>
-      <PageIntro eyebrow="Blog" title="Maradj naprakész">
+      <PageIntro eyebrow="Blog" title="Friss gondolatok a digitális világból.">
         <p>
-          lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          Legyél képben a legújabb technológiai trendekkel, fejlesztési
+          tapasztalatokkal és üzleti megoldásokkal. Blogunkban valódi tudást és
+          inspirációt osztunk meg a digitális sikerekért.
         </p>
       </PageIntro>
 
@@ -47,7 +57,7 @@ export default async function Blog() {
                             {formatDate(article.date)}
                           </time>
                         </dd>
-                        <dt className="sr-only">Author</dt>
+                        <dt className="sr-only">Szerző</dt>
                         <dd className="mt-6 flex gap-x-4">
                           <div className="flex-none overflow-hidden rounded-xl bg-neutral-100">
                             <Image
@@ -69,7 +79,7 @@ export default async function Blog() {
                       </p>
                       <Button
                         href={article.href}
-                        aria-label={`Read more: ${article.title}`}
+                        aria-label={`Tovább olvasom: ${article.title}`}
                         className="mt-8"
                       >
                         Tovább olvasom

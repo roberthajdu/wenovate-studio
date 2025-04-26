@@ -111,7 +111,7 @@ function Clients() {
     <Container className="mt-24 sm:mt-32 lg:mt-40">
       <FadeIn>
         <h2 className="font-display text-2xl font-semibold text-neutral-950">
-          You’re in good company
+          Partnereink, akik már minket választottak
         </h2>
       </FadeIn>
       <FadeInStagger className="mt-10" faster>
@@ -136,9 +136,18 @@ function Clients() {
 }
 
 export const metadata: Metadata = {
-  title: 'Our Work',
+  title: 'Esettanulmányok | Wenovate',
   description:
-    'We believe in efficiency and maximizing our resources to provide the best value to our clients.',
+    'Nézd meg, hogyan valósítunk meg digitális projekteket üzleti eredményekkel. Esettanulmányok valós ügyfelek sikereiről a Wenovate-tól.',
+  openGraph: {
+    title: 'Esettanulmányok | Wenovate',
+    description:
+      'Fedezd fel, hogyan alkotunk innovatív digitális megoldásokat, amelyek kézzelfogható üzleti sikereket hoznak. Tekintsd meg referenciáinkat.',
+    url: 'https://wenovate.io/work',
+    siteName: 'Wenovate',
+    locale: 'hu_HU',
+    type: 'website',
+  },
 }
 
 export default async function Work() {
@@ -147,13 +156,13 @@ export default async function Work() {
   return (
     <>
       <PageIntro
-        eyebrow="Our work"
-        title="Proven solutions for real-world problems."
+        eyebrow="Esettanulmányok"
+        title="Üzleti eredmények valódi digitális megoldásokkal."
       >
         <p>
-          We believe in efficiency and maximizing our resources to provide the
-          best value to our clients. The primary way we do that is by re-using
-          the same five projects we’ve been developing for the past decade.
+          Minden projektünk mögött egy közös cél áll: valódi értéket teremteni
+          ügyfeleink számára. Ismerd meg néhány korábbi munkánkat, ahol a
+          technológia és az üzleti gondolkodás találkozott a siker érdekében.
         </p>
       </PageIntro>
 

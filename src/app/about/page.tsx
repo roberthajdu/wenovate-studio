@@ -1,4 +1,3 @@
-import { type Metadata } from 'next'
 import Image from 'next/image'
 
 import { Border } from '@/components/Border'
@@ -180,9 +179,19 @@ function Team() {
   )
 }
 
-export const metadata: Metadata = {
-  title: 'Rólunk',
-  description: 'Modern digitális megoldások az üzleti sikereidért',
+export const metadata = {
+  title: 'Rólunk | Wenovate',
+  description:
+    'Modern technológiák, üzleti szemlélet és megbízható kivitelezés. Ismerd meg, hogyan dolgozunk együtt a te sikeredért.',
+  openGraph: {
+    title: 'Rólunk | Wenovate',
+    description:
+      'Üzleti fókuszú digitális megoldások és hosszú távú partnerség a Wenovate-nál.',
+    url: 'https://wenovate.io/about',
+    siteName: 'Wenovate',
+    locale: 'hu_HU',
+    type: 'website',
+  },
 }
 
 export default async function About() {

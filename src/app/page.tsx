@@ -13,7 +13,7 @@ import logoFerfikolcsonbeLight from '@/images/clients/ferfikolcsonbe/logo2-min.w
 import logoMkszLight from '@/images/clients/mksz/MKSZ_Logo_horizontal_white.png'
 import logoZsigaGyulaLight from '@/images/clients/zsiga-gyula/logo-white.png'
 import logoZsigaGyula from '@/images/clients/zsiga-gyula/logo.webp'
-import imageLaptop from '@/images/laptop.jpg'
+import imageLaptop from '@/images/services.jpeg'
 import { type CaseStudy, type MDXEntry, loadCaseStudies } from '@/lib/mdx'
 
 const clients: [string, StaticImageData][] = [
@@ -166,8 +166,26 @@ function Services() {
 }
 
 export const metadata: Metadata = {
+  title: 'Digitális megoldások vállalkozásod sikeréért | Wenovate',
   description:
-    'Az általunk készített weboldalakat és alkalmazásokat innovatív és kreatív megoldásokkal tesszük egyedivé és személyre szabottá. Modern munkáink személyes élményt nyújtanak a felhasználóknak a felgyorsult online világban.',
+    'Egyedi webfejlesztés, mobilalkalmazások és mesterséges intelligencia alapú rendszerek. Támogatjuk a növekedésedet modern technológiával.',
+  openGraph: {
+    title: 'Digitális megoldások vállalkozásod sikeréért | Wenovate',
+    description:
+      'Egyedi webfejlesztés, mobilalkalmazások és AI-megoldások a Wenovate-tól. Fejlesszük együtt a digitális jövődet!',
+    url: 'https://wenovate.io/',
+    siteName: 'Wenovate',
+    // images: [
+    //   {
+    //     url: 'https://wenovate.io/seo/homepage-hero.png',
+    //     width: 1200,
+    //     height: 630,
+    //     alt: 'Wenovate webfejlesztés és AI megoldások',
+    //   },
+    // ],
+    locale: 'hu_HU',
+    type: 'website',
+  },
 }
 
 export default async function Home() {

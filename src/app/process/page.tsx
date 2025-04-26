@@ -1,5 +1,3 @@
-import { type Metadata } from 'next'
-
 import { Blockquote } from '@/components/Blockquote'
 import { ContactSection } from '@/components/ContactSection'
 import { Container } from '@/components/Container'
@@ -10,9 +8,9 @@ import { PageIntro } from '@/components/PageIntro'
 import { SectionIntro } from '@/components/SectionIntro'
 import { StylizedImage } from '@/components/StylizedImage'
 import { TagList, TagListItem } from '@/components/TagList'
-import imageLaptop from '@/images/laptop.jpg'
-import imageMeeting from '@/images/meeting.jpg'
-import imageWhiteboard from '@/images/whiteboard.jpg'
+import imageLaptop from '@/images/build.jpeg'
+import imageMeeting from '@/images/delivery.jpeg'
+import imageWhiteboard from '@/images/discovery.jpeg'
 
 function Section({
   title,
@@ -181,10 +179,19 @@ function Values() {
   )
 }
 
-export const metadata: Metadata = {
-  title: 'Our Process',
+export const metadata = {
+  title: 'Folyamatunk | Wenovate',
   description:
-    'We believe in efficiency and maximizing our resources to provide the best value to our clients.',
+    'Fedezd fel, hogyan dolgozunk együtt: felfedezés, stratégia, fejlesztés és optimalizálás, hogy a digitális projekted sikeres legyen.',
+  openGraph: {
+    title: 'Folyamatunk | Wenovate',
+    description:
+      'Átlátható munkafolyamat modern technológiákkal és üzleti fókuszú megközelítéssel a Wenovate-nál.',
+    url: 'https://wenovate.io/process',
+    siteName: 'Wenovate',
+    locale: 'hu_HU',
+    type: 'website',
+  },
 }
 
 export default function Process() {

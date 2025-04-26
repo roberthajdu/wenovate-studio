@@ -12,6 +12,30 @@ export const article = {
 export const metadata = {
   title: article.title,
   description: article.description,
+  openGraph: {
+    title: article.title,
+    description: article.description,
+    url: `https://wenovate.io/blog/ai-hasznalat-uzletben`,
+    siteName: 'Wenovate',
+    locale: 'hu_HU',
+    type: 'article',
+    images: [
+      {
+        url: `https://wenovate.io/api/og?title=${encodeURIComponent(article.title)}&author=${encodeURIComponent(article.author.name)}`,
+        width: 1200,
+        height: 630,
+        alt: article.title,
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: article.title,
+    description: article.description,
+    images: [
+      `https://wenovate.io/api/og?title=${encodeURIComponent(article.title)}&author=${encodeURIComponent(article.author.name)}`,
+    ],
+  },
 }
 
 ![](./thumbnail.jpeg)

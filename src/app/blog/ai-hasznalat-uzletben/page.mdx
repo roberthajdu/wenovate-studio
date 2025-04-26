@@ -21,7 +21,7 @@ export const metadata = {
     type: 'article',
     images: [
       {
-        url: `https://wenovate.io/api/og?title=${encodeURIComponent(article.title)}&author=${encodeURIComponent(article.author.name)}`,
+        url: `https://wenovate.io/api/og?title=${encodeURIComponent(article.title)}`,
         width: 1200,
         height: 630,
         alt: article.title,
@@ -33,7 +33,7 @@ export const metadata = {
     title: article.title,
     description: article.description,
     images: [
-      `https://wenovate.io/api/og?title=${encodeURIComponent(article.title)}&author=${encodeURIComponent(article.author.name)}`,
+      `https://wenovate.io/api/og?title=${encodeURIComponent(article.title)}`,
     ],
   },
 }
